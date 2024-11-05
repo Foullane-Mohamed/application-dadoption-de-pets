@@ -5,7 +5,7 @@ const titre = document.getElementById("titre");
 const description = document.getElementById("description");
 
 btn_like.addEventListener("click", () => {
-    banner_image.style.backgroundImage = "none";  
+    banner_image.style.backgroundImage = `url(${petsArray[2].image})`; 
 
 
     
