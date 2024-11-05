@@ -1,15 +1,9 @@
 const btn_like = document.querySelector(".fill");
 const btn_dislike = document.querySelector(".outline");
 let banner_image = document.querySelector(".banner-image");
-const titre = document.getElementById("titre");
-const description = document.getElementById("description");
-
-btn_like.addEventListener("click", () => {
-    banner_image.style.backgroundImage = `url(${petsArray[2].image})`; 
-
-
-    
-});
+let titre = document.getElementById("titre1");
+let description = document.getElementById("description1");
+;
 let petsArray = [
     {
       id: 1,
@@ -84,14 +78,25 @@ let petsArray = [
   ];
 
 
-
-
 let petTest= petsArray[0];
 
 
+btn_like.addEventListener("click", () => {
+    petsArray.forEach(pet =>{
 
-  function showPet(pet){
-    document.c
-  }
+        banner_image.style.backgroundImage = `url(${pet.image})`; 
+        titre.textContent = `${pet.name}`;
+        description.innerHTML = `${pet.description}`;
+    })
+    
+
+
+    
+})
+
+
+//   function showPet(pet){
+//     document.c
+//   }
   
 
